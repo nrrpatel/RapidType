@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: crimson;
+    color: #111;
+}
+
+.wrapper{
+    width: 770px;
+    padding: 35px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.wrapper .content-box{
+    padding: 13px 20px 0;
+    border: 1px solid #111;
+    border-radius: 10px;
+}
+.content-box .typing-text{
+    max-height: 255px;
+    overflow-y: auto;
+}
+
+.typing-text ::-webkit-scrollbar{
+    width: 0;
+}
+
+.typing-text p{
+    font-size: 21px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-break: break all;
+}
+
+.typing-text p span.correct{
+    color: #56964f;
+}
+.typing-text p span.incorrect{
+    color: crimson;
+    background: #ffc0cb;
+    outline: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.content-box .content{
+    display: flex;
+    margin-top: 17px;
+    padding: 12px 0;
+    align-items: center;
+    border-top: 1px solid #111;
+    justify-content: space-between;
+}
+
+.content button{
+    border: none;
+    outline: none;
+    width: 105px;
+    padding: 8px 0;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: transform ease;
+}
+
+.content .result-details{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% -140px);
+}
+
+.result-details li{
+    height: 22px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.result-details li:not(:first-child){
+    padding-left: 22px;
+    border-left: 1px solid #111;
+}
+
+.result-details li p{
+    font-size: 19px;
+}
+
+.result-details li span{
+    display: block;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.result-details li:not(:first-child) span{
+    font-weight: 500;
+}
+
+.result-details li b{
+    font-weight: 500;
+
+}
